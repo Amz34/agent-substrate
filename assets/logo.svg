@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0b1528"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7f00ff"/>
+      <stop offset="100%" stop-color="#e100ff"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#7f00ff"/>
+      <stop offset="100%" stop-color="#00ffa3"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" rx="160" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Outer Boundary Ring -->
+  <circle cx="400" cy="400" r="320" fill="none" stroke="#1e293b" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="400" cy="400" r="280" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Substrate Hexagonal Mesh Lattices -->
+  <g stroke="url(#cyanGrad)" stroke-width="3" fill="none" opacity="0.35">
+    <polygon points="400,160 560,250 560,430 400,520 240,430 240,250"/>
+    <polygon points="400,240 500,300 500,420 400,480 300,420 300,300"/>
+  </g>
+
+  <!-- High-Density Interconnect Tracks -->
+  <g stroke="url(#purpleGrad)" stroke-width="2.5" opacity="0.4" stroke-dasharray="4 4">
+    <line x1="400" y1="120" x2="400" y2="240"/>
+    <line x1="640" y1="400" x2="500" y2="400"/>
+    <line x1="160" y1="400" x2="300" y2="400"/>
+    <line x1="400" y1="680" x2="400" y2="560"/>
+  </g>
+
+  <!-- Central Dynamic Kernel Core (S-Shaped Substrate Monogram) -->
+  <path d="M 470 270 C 470 230, 420 210, 370 230 C 310 255, 300 330, 360 365 L 440 410 C 500 445, 490 535, 420 560 C 360 580, 310 545, 310 495" 
+        fill="none" 
+        stroke="url(#accentGrad)" 
+        stroke-width="38" 
+        stroke-linecap="round" 
+        filter="url(#glow)"/>
+
+  <!-- Fast Rehydration Pulse Nodes (Sub-500ms Indicators) -->
+  <circle cx="470" cy="270" r="14" fill="#00f2fe" filter="url(#glow)"/>
+  <circle cx="310" cy="495" r="14" fill="#00ffa3" filter="url(#glow)"/>
+  <circle cx="400" cy="385" r="10" fill="#ffffff" filter="url(#glow)"/>
+
+  <!-- Satellite Micro-Nodes (Zero-Trust Sandboxes) -->
+  <circle cx="240" cy="250" r="8" fill="#4facfe"/>
+  <circle cx="560" cy="250" r="8" fill="#7f00ff"/>
+  <circle cx="560" cy="430" r="8" fill="#00ffa3"/>
+  <circle cx="240" cy="430" r="8" fill="#00f2fe"/>
+</svg>
