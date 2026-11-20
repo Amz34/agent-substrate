@@ -106,11 +106,8 @@
   <g filter="url(#softShadow)">
     <path d="M 332 370 C 312 200, 412 135, 512 135 C 612 135, 712 200, 692 370 C 682 455, 635 515, 512 515 C 389 515, 342 455, 332 370 Z" 
           fill="url(#octoBody)" stroke="url(#octoRim)" stroke-width="8"/>
-    <!-- Forehead Specular Highlight / Cybernetic Circuit Crest -->
+    <!-- Forehead Specular Highlight -->
     <ellipse cx="455" cy="215" rx="75" ry="35" transform="rotate(-18 455 215)" fill="#ffffff" opacity="0.28"/>
-    <!-- Kubernetes / Substrate Crown Emblem on Forehead -->
-    <polygon points="512,215 547,235 547,275 512,295 477,275 477,235" fill="#0d1711" stroke="#d4ffd6" stroke-width="5" opacity="0.85"/>
-    <circle cx="512" cy="255" r="10" fill="#92f497" filter="url(#neonGlow)"/>
   </g>
 
   <!-- Expressive Mascot Eyes (Focused & Intelligent) -->
