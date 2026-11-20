@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-all-ingress-egress
+  namespace: ate-system
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+    - Egress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-atenet-router-to-workers
+  namespace: ate-system
+spec:
+  podSelector:
+    matchLabels:
+      ate.dev/component: ateworker
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              ate.dev/component: atenet-router
+      ports:
+        - protocol: TCP
+          port: 8443

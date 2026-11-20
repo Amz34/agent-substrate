@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Agent Substrate Octopus Hypervisor Mascot</title>
+  <desc id="logoDesc">An emerald cybernetic octopus mascot orchestrating sandboxed agent nodes with glowing control strings.</desc>
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#173322" stop-opacity="0.95"/>
+      <stop offset="65%" stop-color="#0d1711" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#080c09" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="octoBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8ffab"/>
+      <stop offset="45%" stop-color="#52d669"/>
+      <stop offset="100%" stop-color="#1c7c36"/>
+    </linearGradient>
+    <linearGradient id="octoRim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4ffd6"/>
+      <stop offset="100%" stop-color="#48b85c"/>
+    </linearGradient>
+    <linearGradient id="tentacleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#52d669"/>
+      <stop offset="100%" stop-color="#135324"/>
+    </linearGradient>
+    <linearGradient id="nodeCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8be8ff"/>
+      <stop offset="100%" stop-color="#2c8eb5"/>
+    </linearGradient>
+    <linearGradient id="nodeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff996"/>
+      <stop offset="100%" stop-color="#c9a426"/>
+    </linearGradient>
+    <linearGradient id="nodePink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9ed2"/>
+      <stop offset="100%" stop-color="#b83b7e"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Shield Badge -->
+  <rect x="48" y="48" width="928" height="928" rx="210" fill="url(#bgGlow)" stroke="#2b4c35" stroke-width="10"/>
+  <rect x="74" y="74" width="876" height="876" rx="190" fill="none" stroke="#92f497" stroke-width="2" stroke-opacity="0.22" stroke-dasharray="12 10"/>
+
+  <!-- Subtle Background Kubernetes Hexagonal Grid -->
+  <g stroke="#243c2c" stroke-width="2" fill="none" opacity="0.45">
+    <polygon points="512,130 820,305 820,655 512,830 204,655 204,305"/>
+    <polygon points="512,210 740,340 740,620 512,750 284,620 284,340"/>
+    <line x1="512" y1="130" x2="512" y2="830"/>
+    <line x1="204" y1="305" x2="820" y2="655"/>
+    <line x1="820" y1="305" x2="204" y2="655"/>
+  </g>
+
+  <!-- Puppet Control Strings from Tentacles to Sandboxed Agent Nodes -->
+  <g stroke="#92f497" stroke-width="3" stroke-dasharray="6 6" opacity="0.75" filter="url(#neonGlow)">
+    <line x1="195" y1="530" x2="195" y2="710"/>
+    <line x1="365" y1="620" x2="365" y2="775"/>
+    <line x1="659" y1="620" x2="659" y2="775"/>
+    <line x1="829" y1="530" x2="829" y2="710"/>
+  </g>
+
+  <!-- Back Tentacles -->
+  <g filter="url(#softShadow)">
+    <!-- Far Left Tentacle -->
+    <path d="M 350 450 C 230 450, 140 420, 145 505 C 150 570, 235 555, 250 515" fill="none" stroke="url(#tentacleGrad)" stroke-width="44" stroke-linecap="round"/>
+    <!-- Far Right Tentacle -->
+    <path d="M 674 450 C 794 450, 884 420, 879 505 C 874 570, 789 555, 774 515" fill="none" stroke="url(#tentacleGrad)" stroke-width="44" stroke-linecap="round"/>
+    <!-- Upper Left Curled Tentacle -->
+    <path d="M 340 390 C 210 350, 160 250, 225 205 C 275 170, 320 230, 285 265" fill="none" stroke="url(#tentacleGrad)" stroke-width="38" stroke-linecap="round"/>
+    <!-- Upper Right Curled Tentacle -->
+    <path d="M 684 390 C 814 350, 864 250, 799 205 C 749 170, 704 230, 739 265" fill="none" stroke="url(#tentacleGrad)" stroke-width="38" stroke-linecap="round"/>
+  </g>
+
+  <!-- Front Controlling Tentacles -->
+  <g filter="url(#softShadow)">
+    <!-- Mid Left Tentacle -->
+    <path d="M 405 490 C 310 540, 260 630, 345 645 C 405 655, 420 595, 390 575" fill="none" stroke="url(#octoBody)" stroke-width="48" stroke-linecap="round"/>
+    <!-- Mid Right Tentacle -->
+    <path d="M 619 490 C 714 540, 764 630, 679 645 C 619 655, 604 595, 634 575" fill="none" stroke="url(#octoBody)" stroke-width="48" stroke-linecap="round"/>
+    <!-- Center Left Tentacle -->
+    <path d="M 465 510 C 445 595, 435 675, 480 685" fill="none" stroke="url(#octoBody)" stroke-width="42" stroke-linecap="round"/>
+    <!-- Center Right Tentacle -->
+    <path d="M 559 510 C 579 595, 589 675, 544 685" fill="none" stroke="url(#octoBody)" stroke-width="42" stroke-linecap="round"/>
+  </g>
+
+  <!-- Suction Cups Highlights -->
+  <g fill="#a8ffab" opacity="0.8">
+    <circle cx="175" cy="535" r="9"/>
+    <circle cx="205" cy="540" r="8"/>
+    <circle cx="325" cy="625" r="10"/>
+    <circle cx="360" cy="635" r="9"/>
+    <circle cx="699" cy="625" r="10"/>
+    <circle cx="664" cy="635" r="9"/>
+    <circle cx="849" cy="535" r="9"/>
+    <circle cx="819" cy="540" r="8"/>
+  </g>
+
+  <!-- Main Octopus Mantle / Head -->
+  <g filter="url(#softShadow)">
+    <path d="M 332 370 C 312 200, 412 135, 512 135 C 612 135, 712 200, 692 370 C 682 455, 635 515, 512 515 C 389 515, 342 455, 332 370 Z" 
+          fill="url(#octoBody)" stroke="url(#octoRim)" stroke-width="8"/>
+    <!-- Forehead Specular Highlight / Cybernetic Circuit Crest -->
+    <ellipse cx="455" cy="215" rx="75" ry="35" transform="rotate(-18 455 215)" fill="#ffffff" opacity="0.28"/>
+    <!-- Kubernetes / Substrate Crown Emblem on Forehead -->
+    <polygon points="512,215 547,235 547,275 512,295 477,275 477,235" fill="#0d1711" stroke="#d4ffd6" stroke-width="5" opacity="0.85"/>
+    <circle cx="512" cy="255" r="10" fill="#92f497" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Expressive Mascot Eyes (Focused & Intelligent) -->
+  <g>
+    <!-- Left Eye Socket -->
+    <ellipse cx="435" cy="380" rx="44" ry="48" fill="#09100b" stroke="#24472c" stroke-width="5"/>
+    <ellipse cx="435" cy="380" rx="30" ry="34" fill="#92f497" filter="url(#neonGlow)"/>
+    <ellipse cx="438" cy="380" rx="16" ry="20" fill="#09100b"/>
+    <circle cx="424" cy="366" r="9" fill="#ffffff"/>
+    <circle cx="448" cy="392" r="4.5" fill="#ffffff"/>
+
+    <!-- Right Eye Socket -->
+    <ellipse cx="589" cy="380" rx="44" ry="48" fill="#09100b" stroke="#24472c" stroke-width="5"/>
+    <ellipse cx="589" cy="380" rx="30" ry="34" fill="#92f497" filter="url(#neonGlow)"/>
+    <ellipse cx="586" cy="380" rx="16" ry="20" fill="#09100b"/>
+    <circle cx="578" cy="366" r="9" fill="#ffffff"/>
+    <circle cx="602" cy="392" r="4.5" fill="#ffffff"/>
+
+    <!-- Confident Subtle Mascot Smile -->
+    <path d="M 488 432 Q 512 450 536 432" fill="none" stroke="#09100b" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sandboxed Agent Puppets (Bottom Row: gVisor & MicroVM Agent Actors) -->
+  <!-- Puppet 1: Cyan Agent Node -->
+  <g transform="translate(135, 710)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="120" height="120" rx="26" fill="#101813" stroke="#64b9dd" stroke-width="5"/>
+    <rect x="22" y="22" width="76" height="54" rx="12" fill="url(#nodeCyan)"/>
+    <circle cx="45" cy="49" r="7" fill="#09100b"/>
+    <circle cx="75" cy="49" r="7" fill="#09100b"/>
+    <text x="60" y="102" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" font-weight="700" fill="#64b9dd" text-anchor="middle">gVisor</text>
+  </g>
+
+  <!-- Puppet 2: Gold Agent Node -->
+  <g transform="translate(305, 765)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="120" height="120" rx="26" fill="#101813" stroke="#f1f077" stroke-width="5"/>
+    <rect x="22" y="22" width="76" height="54" rx="12" fill="url(#nodeGold)"/>
+    <circle cx="45" cy="49" r="7" fill="#09100b"/>
+    <circle cx="75" cy="49" r="7" fill="#09100b"/>
+    <text x="60" y="102" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" font-weight="700" fill="#f1f077" text-anchor="middle">microVM</text>
+  </g>
+
+  <!-- Puppet 3: Pink Agent Node -->
+  <g transform="translate(599, 765)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="120" height="120" rx="26" fill="#101813" stroke="#e77cb2" stroke-width="5"/>
+    <rect x="22" y="22" width="76" height="54" rx="12" fill="url(#nodePink)"/>
+    <circle cx="45" cy="49" r="7" fill="#09100b"/>
+    <circle cx="75" cy="49" r="7" fill="#09100b"/>
+    <text x="60" y="102" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" font-weight="700" fill="#e77cb2" text-anchor="middle">SPIFFE</text>
+  </g>
+
+  <!-- Puppet 4: Emerald Agent Node -->
+  <g transform="translate(769, 710)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="120" height="120" rx="26" fill="#101813" stroke="#92f497" stroke-width="5"/>
+    <rect x="22" y="22" width="76" height="54" rx="12" fill="url(#octoBody)"/>
+    <circle cx="45" cy="49" r="7" fill="#09100b"/>
+    <circle cx="75" cy="49" r="7" fill="#09100b"/>
+    <text x="60" y="102" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" font-weight="700" fill="#92f497" text-anchor="middle">&lt;500ms</text>
+  </g>
+</svg>

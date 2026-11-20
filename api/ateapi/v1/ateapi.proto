@@ -1,0 +1,35 @@
+// Copyright 2026 The Agent Substrate Authors
+// SPDX-License-Identifier: Apache-2.0
+
+syntax = "proto3";
+package ate.api.v1;
+option go_package = "go.ate.dev/substrate/api/ateapi/v1;ateapiv1";
+
+service ActorControlService {
+  rpc CreateActor(CreateActorRequest) returns (Actor);
+  rpc SuspendActor(SuspendActorRequest) returns (SuspendActorResponse);
+  rpc ResumeActor(ResumeActorRequest) returns (ResumeActorResponse);
+  rpc TeleportActor(TeleportActorRequest) returns (TeleportActorResponse);
+}
+
+message CreateActorRequest {
+  string name = 1;
+  string atespace = 2;
+  string template_name = 3;
+}
+
+message Actor {
+  string id = 1;
+  string name = 2;
+  string atespace = 3;
+  string state = 4;
+  string assigned_worker = 5;
+  string spiffe_id = 6;
+}
+
+message SuspendActorRequest { string actor_id = 1; }
+message SuspendActorResponse { string snapshot_digest = 1; int64 duration_ms = 2; }
+message ResumeActorRequest { string actor_id = 1; string target_worker_pool = 2; }
+message ResumeActorResponse { string worker_pod = 1; int64 duration_ms = 2; }
+message TeleportActorRequest { string actor_id = 1; string destination_node = 2; }
+message TeleportActorResponse { bool ok = 1; int64 transfer_ms = 2; }
